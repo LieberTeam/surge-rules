@@ -20,15 +20,39 @@ jobs:
           echo "custom_icloud=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/icloud.txt" >> $GITHUB_ENV
           echo "custom_tld_not_cn=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/tld-!cn.txt" >> $GITHUB_ENV
           echo "custom_private=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/private.txt" >> $GITHUB_ENV
-          echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt" >> $GITHUB_ENV
-          echo "Loyalsoldier_proxy=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt" >> $GITHUB_ENV
-          echo "Loyalsoldier_direct=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt" >> $GITHUB_ENV
-          echo "Loyalsoldier_gfw=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt" >> $GITHUB_ENV
-          echo "Loyalsoldier_greatfire=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/greatfire.txt" >> $GITHUB_ENV
+          echo "private_Download=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Download.list" >> $GITHUB_ENV
+          echo "Download=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Download/Download.list" >> $GITHUB_ENV
+          echo "lieber_reject=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt" >> $GITHUB_ENV
+          echo "lieber_proxy=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt" >> $GITHUB_ENV
+          echo "lieber_direct=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt" >> $GITHUB_ENV
+          echo "ChinaTest=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaTest/ChinaTest.list" >> $GITHUB_ENV
+          echo "ChinaTest_Domain=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaTest/ChinaTest_Domain.list" >> $GITHUB_ENV
+          echo "ACL4SSR_ChinaDomain=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list" >> $GITHUB_ENV
+          echo "lieber_gfw=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/gfw.txt" >> $GITHUB_ENV
+          echo "lieber_greatfire=https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/greatfire.txt" >> $GITHUB_ENV
           echo "felixonmars_apple=https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf" >> $GITHUB_ENV
           echo "felixonmars_google=https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/google.china.conf" >> $GITHUB_ENV
           echo "ipipnet_chinaiplist=https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt" >> $GITHUB_ENV
           echo "telegram_cidr=https://core.telegram.org/resources/cidr.txt" >> $GITHUB_ENV
+          echo "lieber_reject_anti=https://anti-ad.net/surge.txt" >> $GITHUB_ENV
+          echo "acl2ssr_banad=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list" >> $GITHUB_ENV
+          echo "acl2ssr_BanProgramAD=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list" >> $GITHUB_ENV
+          echo "acl2ssr_BanEasyList=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list" >> $GITHUB_ENV
+          echo "acl2ssr_BanEasyListChina=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list" >> $GITHUB_ENV
+          echo "acl2ssr_BanEasyPrivacy=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list" >> $GITHUB_ENV
+          echo "NobyDa_AdRule=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list" >> $GITHUB_ENV
+          echo "NobyDa_AdRuleTest=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRuleTest.list" >> $GITHUB_ENV
+          echo "NobyDa_AD_Block=https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block.txt" >> $GITHUB_ENV
+          echo "NobyDa_AD_Block_Plus=https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block_Plus.txt" >> $GITHUB_ENV
+          echo "Adblock4limbo=https://limbopro.xyz/Adblock4limbo.list" >> $GITHUB_ENV
+          echo "Proxy=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list" >> $GITHUB_ENV
+          echo "Proxy_Domain=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy_Domain.list" >> $GITHUB_ENV
+          echo "Advertising=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list" >> $GITHUB_ENV
+          echo "Advertising_Domain=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising_Domain.list" >> $GITHUB_ENV
+          echo "AdvertisingLite=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list" >> $GITHUB_ENV
+          echo "AdvertisingLite_Domain=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite_Domain.list" >> $GITHUB_ENV
+          echo "AdvertisingTest=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest.list" >> $GITHUB_ENV
+          echo "AdvertisingTest_Domain=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingTest/AdvertisingTest_Domain.list" >> $GITHUB_ENV
         shell: bash
 
       - name: Checkout the default branch
@@ -54,39 +78,102 @@ jobs:
 
       - name: Generate direct.txt file
         run: |
-          curl -sSL ${Loyalsoldier_direct} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "$2\n"' > direct.txt
-          curl -sSL ${Loyalsoldier_direct} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' >> direct.txt
-          curl -sSL ${Loyalsoldier_direct} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN,$2\n"' > ruleset/direct.txt
-          curl -sSL ${Loyalsoldier_direct} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' >> ruleset/direct.txt
+          curl -sSL ${lieber_direct} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN,$2\n"' > ruleset/tempDirect.txt
+          curl -sSL ${lieber_direct} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' >> ruleset/tempDirect.txt
+
+          curl -sSL ${ACL4SSR_ChinaDomain} > ruleset/tempDirect.txt
+          curl -sSL ${ChinaTest} >> ruleset/tempDirect.txt
+
+
+          curl -sSL ${lieber_direct} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "$2\n"' > temp_direct.txt
+          curl -sSL ${lieber_direct} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' >> temp_direct.txt
+
+          curl -sSL ${ACL4SSR_ChinaDomain} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_direct.txt
+          curl -sSL ${ChinaTest_Domain} >> temp_direct.txt
+
+          curl -sSL ${ACL4SSR_ChinaDomain} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_direct.txt
+
+          awk '!a[$0]++' ruleset/tempDirect.txt > ruleset/direct.txt
+          awk '!a[$0]++' temp_direct.txt > direct.txt
 
       - name: Generate proxy.txt file
         run: |
-          curl -sSL ${Loyalsoldier_proxy} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "$2\n"' > proxy.txt
-          curl -sSL ${Loyalsoldier_proxy} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' >> proxy.txt
-          curl -sSL ${Loyalsoldier_proxy} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN,$2\n"' > ruleset/proxy.txt
-          curl -sSL ${Loyalsoldier_proxy} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' >> ruleset/proxy.txt
+          curl -sSL ${Proxy_Domain} > temp_proxy.txt
+          curl -sSL ${lieber_proxy} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "$2\n"' >> temp_proxy.txt
+          curl -sSL ${lieber_proxy} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' >> temp_proxy.txt
+
+          curl -sSL ${Proxy} > ruleset/temp_proxy.txt
+          curl -sSL ${lieber_proxy} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(full:)([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN,$2\n"' >> ruleset/temp_proxy.txt
+          curl -sSL ${lieber_proxy} | grep -Ev "^(regexp|keyword|full):" | perl -ne '/^(domain:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' >> ruleset/temp_proxy.txt
+
+          awk '!a[$0]++' ruleset/temp_proxy.txt > ruleset/proxy.txt
+          awk '!a[$0]++' temp_proxy.txt > proxy.txt
 
       - name: Generate reject.txt file
         run: |
-          curl -sSL ${Loyalsoldier_reject} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > reject.txt
-          curl -sSL ${Loyalsoldier_reject} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/reject.txt
+          curl -sSL ${lieber_reject} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/temp_reject.txt
+          curl -sSL ${Advertising} >> ruleset/temp_reject.txt
+          curl -sSL ${AdvertisingTest} >> ruleset/temp_reject.txt
+          curl -sSL ${AdvertisingLite} >> ruleset/temp_reject.txt
+          curl -sSL ${acl2ssr_banad} >> ruleset/temp_reject.txt
+          curl -sSL ${acl2ssr_BanProgramAD} >> ruleset/temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyList} >> ruleset/temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyListChina} >> ruleset/temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyPrivacy} >> ruleset/temp_reject.txt
+          curl -sSL ${NobyDa_AdRule} >> ruleset/temp_reject.txt
+          curl -sSL ${NobyDa_AdRuleTest} >> ruleset/temp_reject.txt
+
+          
+          curl -sSL ${lieber_reject} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > temp_reject.txt
+
+          curl -sSL ${Advertising_Domain} >> temp_reject.txt
+          curl -sSL ${AdvertisingLite_Domain} >> temp_reject.txt
+          curl -sSL ${AdvertisingTest_Domain} >> temp_reject.txt
+  
+          curl -sSL ${acl2ssr_banad} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${Adblock4limbo} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanProgramAD} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyList} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyListChina} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyPrivacy} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${lieber_reject_anti} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${NobyDa_AdRule} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${NobyDa_AdRuleTest} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${NobyDa_AD_Block} | grep -E "^DOMAIN-SUFFIX," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          
+          curl -sSL ${acl2ssr_BanProgramAD} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_banad} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyList} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyListChina} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${acl2ssr_BanEasyPrivacy} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${NobyDa_AdRule} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${NobyDa_AdRuleTest} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+          curl -sSL ${NobyDa_AD_Block_Plus} | grep -E "^DOMAIN," | awk -F ',' '{printf "%s\n", $2}' >> temp_reject.txt
+
+          awk '!a[$0]++' temp_reject.txt > reject.txt
+          awk '!a[$0]++' ruleset/temp_reject.txt > ruleset/reject.txt
 
       - name: Generate private.txt file
         run: |
           curl -sSL ${custom_private} | awk -F ':' '/^full:/ {printf "%s\n", $2}' > private.txt
           curl -sSL ${custom_private} | awk -F ':' '/^domain:/ {printf ".%s\n", $2}' >> private.txt
-          curl -sSL ${custom_private} | awk -F ':' '/^full:/ {printf "DOMAIN,%s\n", $2}' > ruleset/private.txt
-          curl -sSL ${custom_private} | awk -F ':' '/^domain:/ {printf "DOMAIN-SUFFIX,%s\n", $2}' >> ruleset/private.txt
+
+          curl -sSL ${private_Download} > ruleset/temp_private.txt
+          curl -sSL ${Download} >> ruleset/temp_private.txt
+          curl -sSL ${custom_private} | awk -F ':' '/^full:/ {printf "DOMAIN,%s\n", $2}' >> ruleset/temp_private.txt
+          curl -sSL ${custom_private} | awk -F ':' '/^domain:/ {printf "DOMAIN-SUFFIX,%s\n", $2}' >> ruleset/temp_private.txt
+
+          awk '!a[$0]++' ruleset/temp_private.txt > ruleset/private.txt
 
       - name: Generate gfw.txt file
         run: |
-          curl -sSL ${Loyalsoldier_gfw} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > gfw.txt
-          curl -sSL ${Loyalsoldier_gfw} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/gfw.txt
+          curl -sSL ${lieber_gfw} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > gfw.txt
+          curl -sSL ${lieber_gfw} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/gfw.txt
 
       - name: Generate greatfire.txt file
         run: |
-          curl -sSL ${Loyalsoldier_greatfire} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > greatfire.txt
-          curl -sSL ${Loyalsoldier_greatfire} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/greatfire.txt
+          curl -sSL ${lieber_greatfire} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > greatfire.txt
+          curl -sSL ${lieber_greatfire} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/greatfire.txt
 
       - name: Generate tld-not-cn.txt file
         run: |
