@@ -112,6 +112,7 @@ jobs:
       - name: Generate reject.txt file
         run: |
           curl -sSL ${lieber_reject} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print "DOMAIN-SUFFIX,$2\n"' > ruleset/temp_reject.txt
+          curl -sSL ${lieber_reject_anti} >> ruleset/temp_reject.txt
           curl -sSL ${Advertising} >> ruleset/temp_reject.txt
           curl -sSL ${AdvertisingTest} >> ruleset/temp_reject.txt
           curl -sSL ${AdvertisingLite} >> ruleset/temp_reject.txt
@@ -122,7 +123,8 @@ jobs:
           curl -sSL ${acl2ssr_BanEasyPrivacy} >> ruleset/temp_reject.txt
           curl -sSL ${NobyDa_AdRule} >> ruleset/temp_reject.txt
           curl -sSL ${NobyDa_AdRuleTest} >> ruleset/temp_reject.txt
-
+          curl -sSL ${NobyDa_AD_Block} >> ruleset/temp_reject.txt
+          curl -sSL ${Adblock4limbo} >> ruleset/temp_reject.txt
           
           curl -sSL ${lieber_reject} | grep -Ev "^(regexp|keyword):" | perl -ne '/^(domain:|full:)?([-_a-zA-Z0-9]+(\.[-_a-zA-Z0-9]+)*)/ && print ".$2\n"' > temp_reject.txt
 
@@ -196,9 +198,9 @@ jobs:
 
       - name: Move files to publish directory
         run: |
-          mkdir -p publish
+          mkdir -p publish/ruleset
           install -p {apple,icloud,google,proxy,direct,reject,private,gfw,greatfire,tld-not-cn,cncidr,telegramcidr}.txt ./publish/
-          mv ruleset ./publish/
+          install -p ruleset/{apple,icloud,google,proxy,direct,reject,private,gfw,greatfire,tld-not-cn,cncidr,telegramcidr}.txt ./publish/ruleset
 
       - name: Release and upload assets
         uses: softprops/action-gh-release@v1
